@@ -1,12 +1,6 @@
 
 '''
 Bro just run this once and check its out put
-
-Weakness:
-    it only replaces the vowels so if hackers spend some they can rebuild the key
-
-Improvement:
-    We find the common pairing of vowels and consonets and replace them
 '''
 
 def conversion(string):
