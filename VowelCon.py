@@ -19,9 +19,14 @@ def conversion(string):
         'Y': '!$)*'
     }
     
-    key = string.maketrans(Key)
-    print("Before Change: ",end="")
-    print(string)
-    print("After Change:" ,end="")
-    print(string.translate(key))
-conversion("Hi my name is Vishal. I am twenty years old. I like playing football")
+    TransTable = string.maketrans(Key)
+    
+    return string.translate(TransTable)
+
+def RecieveList(contents):
+    print("Recieved contents: ", contents)
+    convo = []
+    for string in contents:
+        convo.append(conversion(string))
+    print (convo)
+

@@ -8,20 +8,23 @@ Read the file and then pass the list to the next function
 
 from os import path
 
-location = input("Enter the file location ")
 
-def CheckFile():
+
+def User_Input():
+    location = input("Enter the file location")
+    contents_list =[]
+    try:
+        f = open(location,"r")
+    except FileNotFoundError:
+        print("Missing File")
+        return
+    contents = f.read()
+    contents_list = contents.split(",")
     
-    if not path.exists(location):
-        return False
-    else:
-        return True 
+    f.close()
+    return contents_list
 
 
-if CheckFile():
-    print("Opened", location)
-    # Create the function to code the file 
-   
-else:
-    print("Missing", location)
-    # Display the error message
+User_Input()
+
+
