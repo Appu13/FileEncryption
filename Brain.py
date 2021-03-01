@@ -1,5 +1,5 @@
 '''
-Used to control and run the whole
+Central Module
 '''
 
 from ReadingFiles import User_Input

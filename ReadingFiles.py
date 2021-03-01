@@ -1,7 +1,6 @@
 '''
-Created on 15-Feb-2021
-
-Read the file and then pass the list to the next function
+Module to read the file based on user input
+convert it to a list and return the list
 '''
 def User_Input():
     # Get location from the user
