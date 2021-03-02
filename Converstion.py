@@ -54,5 +54,3 @@ def Store():
     with open('listfile.txt', 'w') as filehandle:
         filehandle.writelines(convo)
 
-ral = ["Hi my name is vishal\n", "I am twenty\n", "I love bunnies\t", "Cows are fat"]
-RecieveList(ral)
