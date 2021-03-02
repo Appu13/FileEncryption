@@ -7,16 +7,15 @@ def User_Input():
     location = input("Enter the file location")
     contents_list =[]
     try:
-        f = open(location,"r")
+       with open (location, 'r') as f:
+           contents = f.read()
     except FileNotFoundError:
         print("Missing File")
         return
 
-    # Read and store contents in a list    
-    contents = f.read()
+    # Store contents as a list
     contents_list = contents.split(",")
-    
-    f.close()
+
     return contents_list
 
 

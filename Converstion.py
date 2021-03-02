@@ -12,13 +12,9 @@ convo = []
 '''
 def RecieveList(contents):
 
-    print("Recieved contents: ", contents)
-    
-    
     for string in contents:
         convo.append(conversion(string))
     
-    print ("Converted text: ",convo)
     Store()
 
 
