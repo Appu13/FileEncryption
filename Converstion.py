@@ -11,7 +11,10 @@ convo = []
 
 '''
 def RecieveList(contents):
-
+    if not contents:
+        print("Missing")
+        return
+    
     for string in contents:
         convo.append(conversion(string))
     
