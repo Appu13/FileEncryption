@@ -2,6 +2,9 @@
 '''
 Module to convert and store the recieved input
 '''
+
+from os import getlogin
+from ReadingFiles import GetLocation
 convo = []
 '''
  Used to:
@@ -50,6 +53,7 @@ def conversion(string):
 
 # Used to store the contents into file name 
 def Store():
-    with open('listfile.txt', 'w') as filehandle:
+    with open(GetLocation(), 'w') as filehandle:
+        filehandle.truncate(0)
         filehandle.writelines(convo)
 

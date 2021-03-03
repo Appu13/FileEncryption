@@ -8,7 +8,4 @@ from Converstion import RecieveList
 ContentsOFile = []
 ContentsOFile = User_Input()
 
-print(ContentsOFile)
-
-
 RecieveList(ContentsOFile)
