@@ -3,7 +3,6 @@
 Module to convert and store the recieved input
 '''
 
-from os import getlogin
 from ReadingFiles import GetLocation
 convo = []
 '''
@@ -30,18 +29,18 @@ def conversion(string):
    
    # key defintion for converstion
     Key = {
-        'a': ';0',
-        'e': ':(',
+        'a': ';',
+        'e': ':',
         'i': '*',
-        'o': '@#',
-        'u': '$%',
-        'y': '|`',
-        'A': '[]',
-        'E': '!@',
-        'I': '^%',
-        'O': '~|',
-        'U': '&#@',
-        'Y': '!$)*'
+        'o': '@',
+        'u': '$',
+        'y': '|',
+        'A': '[',
+        'E': '!',
+        'I': '^',
+        'O': '~',
+        'U': '&',
+        'Y': '+'
     }
     
     # Making the transtion table
@@ -56,4 +55,5 @@ def Store():
     with open(GetLocation(), 'w') as filehandle:
         filehandle.truncate(0)
         filehandle.writelines(convo)
+    print("Done")
 

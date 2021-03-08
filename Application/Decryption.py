@@ -1,19 +1,13 @@
+'''
+This module is used to decrypt the passed list
 
 '''
-Module to convert and store the recieved input
-'''
 
-from os import getlogin
 from ReadingFiles import GetLocation
 convo = []
-'''
- Used to:
-  Recieve the contents of the read file 
-  Call the conversion function
-  Finally call the store method to store all the contents to the text 
 
-'''
 def RecieveList(contents):
+    
     if not contents:
         print("Missing")
         return
@@ -24,24 +18,20 @@ def RecieveList(contents):
     Store()
 
 
-
-# Method to convert the string based on a transtion table
 def conversion(string):
-   
-   # key defintion for converstion
     Key = {
-        'a': ';0',
-        'e': ':(',
-        'i': '*',
-        'o': '@#',
-        'u': '$%',
-        'y': '|`',
-        'A': '[]',
-        'E': '!@',
-        'I': '^%',
-        'O': '~|',
-        'U': '&#@',
-        'Y': '!$)*'
+        ';': 'a',
+        ':': 'e',
+        '*': 'i',
+        '@': 'o',
+        '$': 'u',
+        '|': 'y',
+        '[': 'A',
+        '!': 'E',
+        '^': 'I',
+        '~': 'O',
+        '&': 'U',
+        '+': 'Y'
     }
     
     # Making the transtion table
@@ -56,4 +46,4 @@ def Store():
     with open(GetLocation(), 'w') as filehandle:
         filehandle.truncate(0)
         filehandle.writelines(convo)
-
+    print("Done")
