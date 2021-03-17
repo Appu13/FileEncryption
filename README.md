@@ -1,6 +1,6 @@
 ---
 title: "FILE ENCRYPTION DOCUMENTATION"
-author: @Appu13 @pravinn19
+author: [Appu13](https://github.com/Appu13) @pravinn19
 ---
 
 ## INTRODUCTION
