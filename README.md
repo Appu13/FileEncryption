@@ -1,6 +1,6 @@
 ---
 title: "FILE ENCRYPTION DOCUMENTATION"
-author: "@Appu13" and "@pravinn19"
+author: [Appu13](https://github.com/Appu13) and [pravinn19](https://github.com/pravinn19)
 ---
 
 ## INTRODUCTION
@@ -25,7 +25,7 @@ Simply put this is the central node of the project the execution starts here and
 
 It calls the reading files module to perform its tasks. The brain module splits the recieved contents into separate strings so it is easier to process.
 
-Then it supplies the read contents to the respective module to perform its tasks. Any errors that are generated in the modules are passed here where they are handled
+Then it supplies the read contents to the respective module to perform its tasks. Any errors that are generated in the modules are passed here where they are handled.
 
 #### **Converstion Module**
 
