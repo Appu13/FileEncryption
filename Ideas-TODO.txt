@@ -1,0 +1,6 @@
+
+
+TODO:
+Testing and improving
+apply 2nd layer of security
+Add GUI
