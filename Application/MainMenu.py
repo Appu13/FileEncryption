@@ -1,5 +1,7 @@
-from tkinter import Button,Tk
 import tkinter.ttk as ttk
+from tkinter import Button, Tk
+
+from Brain import Decrypt, Encrypt
 
 root=Tk()
 root.title("Protect your Files")
@@ -8,11 +10,11 @@ root.resizable(0,0)
 
 #Encryption button function
 def Encryption():
-	pass
+	Encrypt()
 
 #Decryption button function
 def Decryption():
-	pass
+	Decrypt()
 
 #creating a main frame
 #main_frame= Frame(root)

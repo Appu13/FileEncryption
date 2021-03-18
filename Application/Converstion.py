@@ -55,5 +55,5 @@ def Store():
     with open(GetLocation(), 'w') as filehandle:
         filehandle.truncate(0)
         filehandle.writelines(convo)
-    print("Done")
+    print("Encryption is Done")
 
