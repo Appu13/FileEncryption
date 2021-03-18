@@ -9,12 +9,14 @@ import Decryption as de
 ''' 
 Simple menu for test
 '''
-option = int(input("Enter your choice: "))
-ContentsOFile = []
-ContentsOFile = User_Input()
-if option == 1:
-   
+def Encrypt():
+
+    ContentsOFile = []
+    ContentsOFile = User_Input() 
     RecieveList(ContentsOFile)
-else: 
+
+def Decrypt(): 
     
+    ContentsOFile = []
+    ContentsOFile = User_Input() 
     de.RecieveList(ContentsOFile)
