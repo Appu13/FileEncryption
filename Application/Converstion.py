@@ -4,7 +4,7 @@ Module to convert and store the recieved input
 '''
 
 from ReadingFiles import GetLocation
-convo = []
+
 '''
  Used to:
   Recieve the contents of the read file 
@@ -12,13 +12,31 @@ convo = []
   Finally call the store method to store all the contents to the text 
 
 '''
+# Variables to measure the completion 
+totalSize,currentSize = 0,0
+convo = []
+
+
+
 def RecieveList(contents):
+    
+    global totalSize
+    global currentSize
+    # Test if the recieved is empty
     if not contents:
         print("Missing")
         return
     
+    
+    totalSize = len(contents)
+    currentSize = 0
+    print("Encryption completion: ")
+    
+    
     for string in contents:
         convo.append(conversion(string))
+        currentSize +=1
+        print(currentSize/totalSize *100)
     
     Store()
 

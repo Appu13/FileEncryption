@@ -1,6 +1,5 @@
 import tkinter.ttk as ttk
 from tkinter import Button, Tk
-
 from Brain import Decrypt, Encrypt
 
 root=Tk()
